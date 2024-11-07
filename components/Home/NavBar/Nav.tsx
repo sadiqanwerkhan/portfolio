@@ -10,7 +10,7 @@ const Nav = () => {
         {/* LOGO */}
         <Image
         src="/images/logo.png"
-        alt="LOGO"
+        alt="Application Logo"
         width={170}
         height={170}
         className="ml-[-1.5rem] sm:ml-0"
