@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Sora } from "next/font/google";
 import "./globals.css";
+import ResponsiveNav from "@/components/Home/NavBar/ResponsiveNav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={font.className}>
+          <ResponsiveNav />
         {children}
       </body>
     </html>
