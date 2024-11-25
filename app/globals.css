@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+  @font-face {
+    font-family: 'Product Sans';
+    src: ulr('./public/fonts/product-sans/Product Sans Regular.ttf')
+  }
+
+  .boor {
+    @apply border border-black;
+  }
+
+  .normshad {
+    @apply border border-gray-300
+  }
+
+  .glassy-header {
+    @apply bg-white bg-opacity-20 backdrop-blur-sm;
+  }
+
+  .active-header {
+    @apply text-black font-bold text-xl;
+  }
+
+  .normal-header {
+    @apply text-black text-xl font-normal;
+  }
+
+  .icons-style {
+    @apply bg-white text-secondary-500 w-10 h-10 rounded-full p-1 cursor-pointer item-transition
+  }
+
+  .icons-style-small {
+    @apply text-white w-6 h-6 rounded-full cursor-pointer item-transition
+  }
+
+  .item-transition {
+    @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+  }
+
+  .scale-up {
+    @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
+  }
+}
+
+.gradient_background {
+  background: linear-gradient(90deg, #FEE5E6, #CDFAF0);
+}
